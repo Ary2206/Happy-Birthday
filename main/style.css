@@ -31,3 +31,28 @@ button {
   padding: 5px 10px;
   text-decoration: underline;
 }
+/* Make everything scale inside screen */
+body {
+  max-width: 100%;
+  overflow-x: hidden;
+  box-sizing: border-box;
+}
+
+/* For text and containers */
+* {
+  box-sizing: inherit;
+  word-wrap: break-word;
+}
+
+/* Optional: auto scale fonts if they’re too big on small screens */
+@media (max-width: 768px) {
+  body {
+    font-size: 90%;
+    padding: 10px;
+  }
+
+  img, video {
+    max-width: 100%;
+    height: auto;
+  }
+}
